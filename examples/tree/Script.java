@@ -1,6 +1,6 @@
 package com.examples.tree;
 
-import com.examples.tree.tasks.RootTask;
+import com.examples.tree.branches.RootBranch;
 import com.runemate.game.api.script.framework.tree.TreeBot;
 import com.runemate.game.api.script.framework.tree.TreeTask;
 
@@ -11,6 +11,6 @@ public class Script extends TreeBot {
 
 	@Override
 	public TreeTask createRootTask() {
-		return new RootTask();
+		return new RootBranch();
 	}
 }
