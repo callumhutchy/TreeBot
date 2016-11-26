@@ -25,6 +25,6 @@ public class BankBranch extends BranchTask {
 
 	@Override
 	public boolean validate() {
-		return Inventory.isEmpty();
+		return Inventory.isEmpty() || Inventory.containsOnly("Banana");
 	}
 }
