@@ -1,8 +1,9 @@
-package com.examples.tree;
+package examples.classes;
 
-import com.examples.tree.branches.RootBranch;
 import com.runemate.game.api.script.framework.tree.TreeBot;
 import com.runemate.game.api.script.framework.tree.TreeTask;
+
+import examples.classes.branches.RootBranch;
 
 /**
  * Created by Mihael on 26.11.2016.

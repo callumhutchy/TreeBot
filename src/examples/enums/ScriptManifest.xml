@@ -1,8 +1,8 @@
 <manifest>
-    <main-class>com.examples.tree.Script</main-class>
-    <name>BankOpener</name>
+    <main-class>examples.enums.Script</main-class>
+    <name>BananaExample</name>
     <tag-line></tag-line>
-    <description>Opens bank for you!</description>
+    <description>Withdraws a banana</description>
     <version>1.0.0</version>
     <compatibility>
         <game-type>RS3</game-type>

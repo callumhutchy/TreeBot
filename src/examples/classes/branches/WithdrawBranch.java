@@ -1,10 +1,11 @@
-package com.examples.tree.branches;
+package examples.classes.branches;
 
-import com.examples.tree.leafs.CloseBank;
-import com.examples.tree.leafs.Withdraw;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Inventory;
 import com.runemate.game.api.script.framework.tree.BranchTask;
 import com.runemate.game.api.script.framework.tree.TreeTask;
+
+import examples.classes.leafs.CloseBank;
+import examples.classes.leafs.Withdraw;
 
 /**
  * Created by Mihael on 26.11.2016.
