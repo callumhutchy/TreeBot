@@ -1,4 +1,4 @@
-package com.examples.tree.leafs;
+package examples.classes.leafs;
 
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank;
 import com.runemate.game.api.script.framework.tree.LeafTask;
@@ -6,12 +6,12 @@ import com.runemate.game.api.script.framework.tree.LeafTask;
 /**
  * Created by Mihael on 26.11.2016.
  */
-public class Withdraw extends LeafTask {
+public class OpenBank extends LeafTask {
 
 	@Override
 	public void execute() {
-		if(Bank.withdraw("Banana", 1)){
-
+		if (Bank.open()) {
+			System.out.println("Bank opened.");
 		}
 	}
 }

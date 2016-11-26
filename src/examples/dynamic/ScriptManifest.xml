@@ -1,0 +1,19 @@
+<manifest>
+    <main-class>examples.classes.Script</main-class>
+    <name>BananaExample</name>
+    <tag-line></tag-line>
+    <description>Withdraws a banana</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+        <game-type>OSRS</game-type>
+    </compatibility>
+    <categories>
+        <category>OTHER</category>
+    </categories>
+    <resources>
+        <resource></resource>
+    </resources>
+    <access></access>
+    <internal-id>qosmiof2-treebotexample</internal-id>
+</manifest>

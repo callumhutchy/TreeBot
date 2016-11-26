@@ -1,9 +1,10 @@
-package com.examples.tree.branches;
+package examples.classes.branches;
 
-import com.examples.tree.leafs.OpenBank;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank;
 import com.runemate.game.api.script.framework.tree.BranchTask;
 import com.runemate.game.api.script.framework.tree.TreeTask;
+
+import examples.classes.leafs.OpenBank;
 
 /**
  * Created by Mihael on 26.11.2016.

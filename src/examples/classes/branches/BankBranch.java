@@ -1,32 +1,31 @@
-package com.examples.tree.branches;
+package examples.classes.branches;
 
-import com.examples.tree.leafs.CloseBank;
-import com.examples.tree.leafs.Withdraw;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Inventory;
 import com.runemate.game.api.script.framework.tree.BranchTask;
 import com.runemate.game.api.script.framework.tree.TreeTask;
 
+import examples.classes.leafs.Deposit;
+
 /**
  * Created by Mihael on 26.11.2016.
  */
-public class WithdrawBranch extends BranchTask {
+public class BankBranch extends BranchTask {
 
-	private Withdraw withdrawLeaf = new Withdraw();
-	private CloseBank closeBankLeaf = new CloseBank();
-
+	private WithdrawBranch withdrawBranch = new WithdrawBranch();
+	private Deposit depositLeaf = new Deposit();
 
 	@Override
 	public TreeTask successTask() {
-		return closeBankLeaf;
+		return withdrawBranch;
 	}
 
 	@Override
 	public TreeTask failureTask() {
-		return withdrawLeaf;
+		return depositLeaf;
 	}
 
 	@Override
 	public boolean validate() {
-		return Inventory.contains("Banana");
+		return Inventory.isEmpty() || Inventory.containsOnly("Banana");
 	}
 }
